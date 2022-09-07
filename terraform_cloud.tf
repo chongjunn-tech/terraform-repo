@@ -12,6 +12,7 @@ provider "google" {
 }
 
 resource "google_compute_instance" "vm" {
+  project="terraform-gcp-361102"
   zone         = "us-central1-a"
   name         = "vm-test-tf-cloud"
   machine_type = "e2-medium"
