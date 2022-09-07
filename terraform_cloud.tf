@@ -9,7 +9,6 @@ terraform {
 
 provider "google" {
   # Configuration options
-  project     = var.project
 }
 
 resource "google_compute_instance" "vm" {
