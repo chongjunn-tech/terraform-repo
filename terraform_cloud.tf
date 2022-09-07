@@ -12,7 +12,7 @@ provider "google" {
 }
 
 resource "google_compute_instance" "vm" {
-  zone         = us-central1-a
+  zone         = "us-central1-a"
   name         = "vm-test-tf-cloud"
   machine_type = "e2-medium"
   }
